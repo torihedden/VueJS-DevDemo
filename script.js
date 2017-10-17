@@ -1,5 +1,19 @@
 // Creating a Vue Instance
 // pass in an options object
+var header = new Vue({
+  el:'#header',
+  data: {
+    sidebarTopics: [
+      {topic: 'Expression Evaluation', id: '#expression'},
+      {topic: 'Rendering Arrays', id: '#arrays'},
+      {topic: 'Conditional Rendering', id: '#conditional'},
+      {topic: 'Event Handling', id: '#event'},
+      {topic: 'Vue Lifecycle Diagram', id: '#vueLifecycle'},
+      {topic: 'Resources', id: '#resources'}
+    ]
+  }
+})
+
 var welcome = new Vue({
   el: '#welcome',
   data: {
