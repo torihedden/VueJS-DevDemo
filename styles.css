@@ -1,0 +1,42 @@
+[v-cloak] {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+div {
+  margin-bottom: 25px;
+}
+
+.content {
+  margin: auto 25%;
+  width: 50%;
+}
+
+h1 {
+  margin-left: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  background-color: lightgray;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+div img {
+  width: 80%;
+  margin: auto 10%;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: lightgray;
+}

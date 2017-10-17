@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue JS Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="content">
+
+      <h1>Vue JS Demo</h1>
+
+      <h2>Expression Evaluation</h2>
+
+      <div id="welcome" v-cloak>
+        <p>{{ contents }}</p>
+      </div>
+
+      <h2>Rendering Arrays</h2>
+      <ul id="meeting-agenda" v-cloak>
+        <strong>Team Meeting Agenda</strong>
+        <li v-for="item in items">
+          <input type="checkbox" :name="item.contents" :id="item.contents" value="">
+          <label :for="item.contents">{{ item.contents }}</label>
+        </li>
+      </ul>
+
+      <h2>Conditional Rendering</h2>
+      <div id="meeting-announcement" v-cloak>
+        <div class="">
+          <input type="checkbox" name="" value="" v-on:click="usualMeetingTime = !usualMeetingTime"> Click to toggle meeting time
+        </div>
+        <div v-if="usualMeetingTime">
+          Our meeting next week is on Tuesday.
+        </div>
+        <div v-else>
+          Our meeting next week is on a different day.
+        </div>
+      </div>
+      <!-- there is also a v-else-if directive -->
+
+      <h2>Event Handling</h2>
+      <div id="interactive-element" v-cloak>
+        {{ developerName }}
+        <button type="button" name="button" v-on:click="addTitle">Click to Add Title</button>
+      </div>
+
+      <h2>Vue Lifecycle Diagram</h2>
+      <div id="lifecycle">
+        <img v-bind:src="imageSrc" alt="diagram of Vue lifecycle">
+      </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+<!--
+
+TODO:
+AJAX call
+destroying a view
+
+-->
+
+<!--
+
+"When a ViewModel is destroyed, all event listeners are automatically removed. You don’t need to worry about cleaning it up yourself."
+
+ -->
