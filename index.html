@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Vue JS Demo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
   <body>
 
@@ -13,6 +14,7 @@
         <h1>Vue JS Demo</h1>
         <ul v-cloak>
           <li v-for="topic in sidebarTopics"><a :href="topic.id">{{ topic.topic }}</a></li>
+          <li><a href="routingExample">Routing Example</a></li>
         </ul>
       </div>
 
@@ -66,6 +68,7 @@
     </div>
 
     <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
