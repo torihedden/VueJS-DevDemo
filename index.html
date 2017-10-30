@@ -8,13 +8,13 @@
   </head>
   <body>
 
-    <div class="content">
+    <div class="content" id="app">
 
       <div class="header" id="header">
         <h1>Vue JS Demo</h1>
         <ul v-cloak>
           <li v-for="topic in sidebarTopics"><a :href="topic.id">{{ topic.topic }}</a></li>
-          <li><a href="routingExample">Routing Example</a></li>
+          <li><a href="https://github.com/torihedden/VueJS-DevDemo">Source Code</a></li>
         </ul>
       </div>
 
@@ -68,25 +68,9 @@
     </div>
 
     <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="scroll.js"></script>
   </body>
 </html>
-
-
-<!--
-
-TODO:
-AJAX call
-destroying a view
-
--->
-
-<!--
-
-"When a ViewModel is destroyed, all event listeners are automatically removed. You don’t need to worry about cleaning it up yourself."
-
- -->
